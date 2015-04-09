@@ -108,3 +108,6 @@ strong {
 .hidden {
     visibility: hidden;
 }
+
+#query {
+}

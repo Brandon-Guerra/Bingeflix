@@ -24,7 +24,7 @@ function getOutput() {
     		displayInfo(show_data);
     	},
     	error: function (response) {
-    		alert(response);
+    		invalidInput();
     	}
     });
     return false;
@@ -57,4 +57,27 @@ function displayInfo(show_data) {
 	$('.left-antenna').removeClass('hidden');
 	$('.right-antenna').removeClass('hidden');
 	$('.tv-poster').css('border-style', 'solid');
+}
+
+function invalidInput() {
+	$('#query').val('');
+	$('#query').attr('placeholder', 'Invalid Title');
+	$('#query').css('border', '1px solid #DC2E35');
+	$('#query').css('transition', 'border 0.5s');
+	shakeItOff('#query');
+}
+
+function shakeItOff(element) {
+	$(element).animate({
+		marginLeft: '-10px'
+	}, 100);
+	$(element).animate({
+		marginLeft: '10px'
+	}, 100);
+	$(element).animate({
+		marginLeft: '-10px'
+	}, 100);
+	$(element).animate({
+		marginLeft: '0px'
+	}, 100);
 }
