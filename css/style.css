@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #DC2E35;
+    
+}
+
+strong {
+    color: #DC2E35;
+}
+
+#binge-info {
+    text-align: center;
+}
+
+.main {
+    background-color: #FBFBFB;
+    padding: 2%;
+}
+
+.logo {
+    width:  10%;
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.display-results {
+    padding-top: 3%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    height: 23%;
+    width:  23%;
+    padding: 2%;
+}
+
+.search {
+    margin-top: -8%;
+}
+
+.description {
+    padding-top: 3%;
+    text-align: center;
+}
+
+.tv {
+    height: 25%;
+    width:  25%;
+    padding-right: 2%;
+}
+
+#tvshow {
+    margin-top: 8%;
+}
+
+.tv-poster {
+    border: solid;
+    border-style: hidden;
+    border-color: #566273;
+    border-width:  10px;
+    border-radius: 10px;
+    height: 75%;
+    width:  75%;
+}
+
+*, *:before, *:after{ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+} 
+.left-antenna{ 
+    position: absolute; 
+    height: 10px; 
+    width: 90px; 
+    background-color: #566273; 
+    border-radius: 100px; 
+    -webkit-transform: rotate(40deg) skew(0deg); 
+    transform: rotate(40deg) skew(0deg);
+    margin-left: 44%;
+    margin-top: 2%;
+}
+
+.right-antenna {
+    position: absolute; 
+    height: 10px; 
+    width: 90px; 
+    background-color: #566273; 
+    border-radius: 100px; 
+    -webkit-transform: rotate(40deg) skew(0deg); 
+    transform: rotate(140deg) skew(0deg);
+    margin-left: 52%;
+    margin-top: 2%;
+}
+
+.hidden {
+    visibility: hidden;
+}

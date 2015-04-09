@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Bingeflix</title>
+  <meta name="description" content="See how long it would take to binge watch all your favorite TV shows.">
+  <meta name="author" content="Brandon Guerra">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -15,12 +15,18 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Poiret+One' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+   <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/request.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,11 +37,37 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+  <div class="section search-show">
+    <div class="container">
+      <div class="row">
+        <h1>Bingeflix</h1>
+      </div>
+      <div class="main row">
+        <div class="one-half column">
+          <img class="u-max-full-width tv center" src="images/tv2.png" alt="tv">
+          <h5 class="u-pull-left description"><strong>Bingeflix</strong> tells you how long it would take to binge watch your favorite TV shows.</h5>
+        </div>
+        <div class="one-half column">
+          <form id="tvshow">
+            <label for="tvShowQuery">
+              <h4 class="u-pull-left">Search for a Show</h4>
+              <img class="search icon u-pull-right" src="images/search.png" alt="magnifying glass">
+            </label>
+            <input class="u-full-width" type="text" autocomplete="off" placeholder="Show Title" id="query">
+            <input class="button-primary" type="submit" name="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="left-antenna hidden"></div>
+    <div class="right-antenna hidden"></div>
+    <div class="section display-results">
+      <div class="container">
+        <div class="row">
+          <img class="u-full-width tv-poster center">
+          <h3 class="section-heading"></h3>
+        </div>
+      </div>
       </div>
     </div>
   </div>
