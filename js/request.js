@@ -17,7 +17,7 @@ function getOutput() {
 
     $.ajax({
     	type: "GET",
-    	url:'brandon-guerra.github.io/Bingeflix/request.php',
+    	url:'/request.php',
     	data: { show: clean },
     	success: function (response) {
     		var show_data = getRuntime(response);
