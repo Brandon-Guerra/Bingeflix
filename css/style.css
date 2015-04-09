@@ -1,6 +1,8 @@
 
 body {
     font-family: 'Alegreya Sans SC', sans-serif;
+    width: 100%;
+    overflow-x:hidden;
 }
 
 h1 {
