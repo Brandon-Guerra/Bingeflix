@@ -17,7 +17,7 @@ function getOutput() {
 
     $.ajax({
     	type: "GET",
-    	url:'Bingeflix/request.php',
+    	url:'http://104.131.74.74/Bingeflix/request.php',
     	data: { show: clean },
     	success: function (response) {
     		var show_data = getRuntime(response);

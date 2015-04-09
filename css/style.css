@@ -1,6 +1,9 @@
 
 body {
     font-family: 'Alegreya Sans SC', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+
 }
 
 h1 {
@@ -81,7 +84,7 @@ strong {
     -webkit-box-sizing: border-box; 
 } 
 .left-antenna{ 
-    position: absolute; 
+    position: relative; 
     height: 10px; 
     width: 90px; 
     background-color: #566273; 
@@ -89,11 +92,10 @@ strong {
     -webkit-transform: rotate(40deg) skew(0deg); 
     transform: rotate(40deg) skew(0deg);
     margin-left: 44%;
-    margin-top: 2%;
 }
 
 .right-antenna {
-    position: absolute; 
+    position: relative; 
     height: 10px; 
     width: 90px; 
     background-color: #566273; 
@@ -101,7 +103,6 @@ strong {
     -webkit-transform: rotate(40deg) skew(0deg); 
     transform: rotate(140deg) skew(0deg);
     margin-left: 52%;
-    margin-top: 2%;
 }
 
 .hidden {
