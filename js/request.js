@@ -17,14 +17,14 @@ function getOutput() {
 
     $.ajax({
     	type: "GET",
-    	url:'http://104.131.74.74/Bingeflix/request.php',
+    	url:'http://brandonguerra.net/request.php',
     	data: { show: clean },
     	success: function (response) {
     		var show_data = getRuntime(response);
     		displayInfo(show_data);
     	},
     	error: function (response) {
-    		invalidInput();
+    		//invalidInput();
     	}
     });
     return false;
