@@ -28,14 +28,6 @@ strong {
     padding: 2%;
 }
 
-.logo {
-    width:  10%;
-    height: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .display-results {
     padding-top:    1%;
     padding-bottom: 1%;
@@ -62,10 +54,9 @@ strong {
     text-align: center;
 }
 
-.tv {
-    height: 25%;
-    width:  25%;
-    padding-right: 2%;
+.popcorn {
+    height: 16%;
+    width:  16%;
 }
 
 #tvshow {
