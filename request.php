@@ -20,6 +20,10 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 $response = curl_exec($ch);
 curl_close($ch);
 
+if ($response == "") {
+  echo " ";
+}
+
 echo ($response);
 
 function seoUrl($string) {

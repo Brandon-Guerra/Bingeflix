@@ -17,14 +17,13 @@ function getOutput() {
 
     $.ajax({
     	type: "GET",
-    	url:'http://brandonguerra.net/request.php',
+    	url:'request.php',
     	data: { show: clean },
     	success: function (response) {
     		var show_data = getRuntime(response);
     		displayInfo(show_data);
     	},
     	error: function (response) {
-    		//invalidInput();
     	}
     });
     return false;
@@ -37,6 +36,9 @@ function sanitizeString(str){
 
 function getRuntime(show) {
 
+	if (show == " ") {
+		invalidInput();
+	};
 	var json = JSON.parse(show);
 	var title = json["title"];
 	var runtime = json["runtime"];
@@ -49,6 +51,7 @@ function getRuntime(show) {
 }
 
 function displayInfo(show_data) {
+	$('#query').css('border', '1px solid #33C3F0');
 	$('#binge-info').empty();
 	$('.display-results > div > div > h3').attr('id', 'binge-info');
 	$('.tv-poster').attr('src', show_data[2]);
