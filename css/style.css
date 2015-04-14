@@ -19,9 +19,6 @@ strong {
     text-align: center;
 }
 
-.row {
-    background-color: white;
-}
 
 .main {
     background-color: #FBFBFB;
@@ -102,8 +99,4 @@ strong {
 
 .hidden {
     visibility: hidden;
-}
-
-.container {
-    background-color: #DC2E35;
 }
