@@ -56,7 +56,7 @@ function displayInfo(show_data) {
 	$('.display-results > div > div > h3').attr('id', 'binge-info');
 	$('.tv-poster').attr('src', show_data[2]);
 	$('#binge-info').append(
-		"It would take you " + show_data[1] + " days to binge watch " + show_data[0]);
+		"It would take you <strong>" + show_data[1] + "</strong> days to binge watch " + show_data[0]);
 	$('.left-antenna').removeClass('hidden');
 	$('.right-antenna').removeClass('hidden');
 	$('.tv-poster').css('border-style', 'solid');

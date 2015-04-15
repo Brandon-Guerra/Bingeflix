@@ -8,7 +8,6 @@ body {
 h1 {
     text-align: center;
     color: #DC2E35;
-    
 }
 
 strong {
@@ -64,37 +63,10 @@ strong {
     border: solid;
     border-style: hidden;
     border-color: #566273;
-    border-width:  10px;
+    border-width:  5px;
     border-radius: 10px;
     height: 90%;
     width:  90%;
-}
-
-*, *:before, *:after{ 
-    box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-} 
-.left-antenna{ 
-    position: relative; 
-    height: 10px; 
-    width: 90px; 
-    background-color: #566273; 
-    border-radius: 100px; 
-    -webkit-transform: rotate(40deg) skew(0deg); 
-    transform: rotate(40deg) skew(0deg);
-    margin-left: 44%;
-}
-
-.right-antenna {
-    position: relative; 
-    height: 10px; 
-    width: 90px; 
-    background-color: #566273; 
-    border-radius: 100px; 
-    -webkit-transform: rotate(40deg) skew(0deg); 
-    transform: rotate(140deg) skew(0deg);
-    margin-left: 52%;
 }
 
 .hidden {
